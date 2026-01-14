@@ -265,6 +265,9 @@
   .min-h-\[100svh\] {
     min-height: 100svh;
   }
+  .min-h-screen {
+    min-height: 100vh;
+  }
   .w-30 {
     width: calc(var(--spacing) * 30);
   }
@@ -310,6 +313,9 @@
   .justify-end {
     justify-content: flex-end;
   }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
@@ -342,6 +348,9 @@
       margin-block-start: calc(calc(var(--spacing) * 10) * var(--tw-space-y-reverse));
       margin-block-end: calc(calc(var(--spacing) * 10) * calc(1 - var(--tw-space-y-reverse)));
     }
+  }
+  .gap-y-12 {
+    row-gap: calc(var(--spacing) * 12);
   }
   .overflow-hidden {
     overflow: hidden;
@@ -496,6 +505,9 @@
   .text-gray-light {
     color: var(--color-gray-light);
   }
+  .text-white {
+    color: var(--color-white);
+  }
   .uppercase {
     text-transform: uppercase;
   }
@@ -576,9 +588,39 @@
       margin-top: calc(var(--spacing) * 8);
     }
   }
+  .md\:block {
+    @media (width >= 48rem) {
+      display: block;
+    }
+  }
+  .md\:hidden {
+    @media (width >= 48rem) {
+      display: none;
+    }
+  }
+  .md\:inline {
+    @media (width >= 48rem) {
+      display: inline;
+    }
+  }
+  .md\:w-32 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 32);
+    }
+  }
   .md\:max-w-\[550px\] {
     @media (width >= 48rem) {
       max-width: 550px;
+    }
+  }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
+    }
+  }
+  .md\:gap-10 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 10);
     }
   }
   .md\:gap-12 {
@@ -628,6 +670,11 @@
   .md\:text-60 {
     @media (width >= 48rem) {
       font-size: var(--text-60);
+    }
+  }
+  .md\:text-72 {
+    @media (width >= 48rem) {
+      font-size: var(--text-72);
     }
   }
   .md\:text-110 {
@@ -719,6 +766,11 @@
         margin-block-start: calc(calc(var(--spacing) * 12) * var(--tw-space-y-reverse));
         margin-block-end: calc(calc(var(--spacing) * 12) * calc(1 - var(--tw-space-y-reverse)));
       }
+    }
+  }
+  .lg\:gap-y-0 {
+    @media (width >= 64rem) {
+      row-gap: calc(var(--spacing) * 0);
     }
   }
   .lg\:border-none {
