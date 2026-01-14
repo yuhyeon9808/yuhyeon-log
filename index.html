@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- BASIC META -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yu Hyeon Ji | Portfolio</title>
+
+    <!-- SEO META -->
+    <meta
+      name="description"
+      content="디자인의 의도를 코드로 번역하는 퍼블리셔 유현지의 포트폴리오입니다."
+    />
+
+    <!-- OPEN GRAPH (SNS SHARE) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="유현지 | 퍼블리셔 포트폴리오" />
+    <meta
+      property="og:description"
+      content="디자인의 의도를 화면 위에 완벽하게 구현합니다."
+    />
+    <meta property="og:image" content="./assets/og-image.png" />
+
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="유현지 | 퍼블리셔 포트폴리오" />
+    <meta name="twitter:image" content="./assets/og-image.png" />
+
+    <!-- FONTS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+
+    <!-- LIB: fullPage.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css"
+    />
+
+    <!-- PROJECT CSS -->
+    <link rel="stylesheet" href="/src/css/style.css" />
+
+    <!-- LIB: jQuery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      defer
+    ></script>
+
+    <!-- LIB: fullPage.js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"
+      defer
+    ></script>
+
+    <!-- PROJECT JS -->
+    <script src="/src/js/script.js" defer></script>
+  </head>
+
+  <body>
+    <main id="fullpage">
+      <!-- HERO SECTION -->
+      <section
+        class="section relative w-full h-screen min-h-[100svh] lg:border-none border-b border-gray-light/10"
+        data-anchor="hero"
+        aria-label="Hero"
+      >
+        <!-- Top area (layout block) -->
+        <div
+          class="absolute top-0 left-0 w-full z-10 px-6 md:px-12 py-8 md:py-10"
+        >
+          <div class="flex items-center sm:justify-between justify-end">
+            <p
+              class="font-inria font-bold text-base md:text-20 hidden sm:block"
+            >
+              Web Publishing
+            </p>
+
+            <!-- Primary navigation (only on first section) -->
+            <nav aria-label="Primary">
+              <ul
+                class="flex gap-8 md:gap-12 text-16 md:text-20 font-medium font-inria mr-auto"
+              >
+                <li>
+                  <a class="hover:opacity-50 transition-opacity" href="#about"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a class="hover:opacity-50 transition-opacity" href="#project"
+                    >Project</a
+                  >
+                </li>
+                <li>
+                  <a class="hover:opacity-50 transition-opacity" href="#contact"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- Center content -->
+        <div
+          class="h-full flex flex-col items-center justify-center text-center px-6"
+        >
+          <h1
+            class="font-inria font-bold tracking-[-0.02em] text-60 sm:text-80 md:text-110 leading-none"
+          >
+            PORTFOLIO
+          </h1>
+          <p
+            class="mt-6 md:mt-8 text-16 md:text-24 font-light tracking-[0.5em]"
+          >
+            디자인의 의도를 화면 위에 구현합니다.
+          </p>
+        </div>
+
+        <!-- Bottom area (layout block) -->
+        <div
+          class="absolute bottom-0 left-0 w-full px-6 md:px-12 py-8 md:py-10 flex items-center justify-between text-16 md:text-20 font-inria tracking-wide"
+          aria-label="Hero bottom text"
+        >
+          <p>From Pixels To Code</p>
+          <p>© 2026 YU HYEON JI</p>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section
+        class="section w-full h-screen min-h-[100svh] bg-main"
+        data-anchor="about"
+        aria-label="About"
+      >
+        <div
+          class="h-full mx-auto w-full max-w-[1200px] px-6 md:px-12 flex items-center"
+        >
+          <div class="w-full grid lg:grid-cols-2 items-start">
+            <!-- Title -->
+            <h2
+              class="font-inria font-bold text-72 lg:text-110 leading-none lg:pb-0 pb-8"
+            >
+              About
+            </h2>
+
+            <!-- Content -->
+            <div class="space-y-10 lg:space-y-12 lg:text-20 md:text-18 text-16">
+              <!-- Intro -->
+              <p class="leading-relaxed text-gray-light">
+                안녕하세요.<br />
+                디자인의 의도를 정확한 코드로 번역하는 퍼블리셔 유현지입니다.<br />
+                단순한 화면 구현을 넘어 사용자 경험을 고려한 최적의 마크업을
+                지향합니다.
+              </p>
+
+              <!-- Education / Experience block -->
+              <div class="space-y-10 lg:text-20 md:text-18 text-16">
+                <div class="space-y-4">
+                  <p class="font-semibold">Education</p>
+                  <p class="text-gray-light">
+                    2025.04 ~
+                    2025.10&nbsp;&nbsp;&nbsp;제로베이스&nbsp;&nbsp;|&nbsp;&nbsp;프론트엔드
+                    교육과정
+                  </p>
+                </div>
+
+                <div class="space-y-4 lg:text-20 md:text-18 text-16">
+                  <p class="font-semibold">Experience</p>
+                  <p class="text-gray-light">
+                    2020.12 ~
+                    2024.04&nbsp;&nbsp;&nbsp;블랙트라이브&nbsp;&nbsp;|&nbsp;&nbsp;Designer
+                  </p>
+                </div>
+              </div>
+
+              <!-- Skills block -->
+              <ul
+                class="border-t border-white-base/10 pt-10 space-y-6 lg:text-20 md:text-18 text-16"
+              >
+                <li class="flex gap-10">
+                  <span class="w-30 font-semibold">Development</span>
+                  <p class="text-gray-light">
+                    HTML5 · CSS3 · JS · jQuery · React
+                  </p>
+                </li>
+
+                <li class="flex gap-10">
+                  <span class="w-30 font-semibold">Design Tools</span>
+                  <p class="text-gray-light">Figma · Photoshop · Illustrator</p>
+                </li>
+
+                <li class="flex gap-10">
+                  <span class="w-30 font-semibold">Others</span>
+                  <p class="text-gray-light">GitHub · Slack · Notion</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECT SECTION -->
+      <!-- 원익IPS -->
+      <section
+        class="section w-full min-h-[100svh] bg-p01 py-20 lg:py-0 flex items-center"
+        data-anchor="project"
+      >
+        <article class="mx-auto w-full max-w-[1200px] px-6 md:px-12">
+          <div
+            class="w-full flex flex-col lg:flex-row lg:gap-0 gap-16 lg:items-start items-center justify-center"
+          >
+            <div
+              class="w-full lg:w-1/2 max-w-[600px] lg:max-w-none text-center lg:text-left"
+            >
+              <p
+                class="font-inria text-72 lg:text-110 opacity-20 leading-none lg:ml-[-12px]"
+              >
+                01
+              </p>
+              <h3
+                class="font-inria font-bold text-50 md:text-60 lg:text-72 uppercase mb-3"
+              >
+                Woink Ips
+              </h3>
+              <span class="block my-3 opacity-50 text-14 md:text-16">
+                HTML5 / CSS3 / JavaScript | Figma
+              </span>
+              <p
+                class="text-gray-light text-16 md:text-18 md:leading-8 leading-6 mb-8 lg:mb-10"
+              >
+                반도체·디스플레이 공정 장비를 만드는
+                <br class="lg:block hidden" />
+                원익IPS 사이트를 리디자인한 프로젝트입니다.
+              </p>
+
+              <div
+                class="flex justify-center lg:justify-start gap-4 text-15 md:text-16 opacity-80"
+              >
+                <a
+                  href="https://wonik-ips.vercel.app/"
+                  class="hover:text-white transition-colors"
+                  >Site</a
+                >
+                <span class="opacity-30">|</span>
+                <a
+                  href="https://github.com/yuhyeon9808/wonikIPS"
+                  class="hover:text-white transition-colors"
+                  >Github</a
+                >
+                <span class="opacity-30">|</span>
+                <a
+                  href="https://www.figma.com/design/PsLoFaU4gGrfZhKOKj6h7V/%EC%9B%90%EC%9D%B5IPS-%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?node-id=0-1&t=sJqoStTDHruX7Eof-1"
+                  class="hover:text-white transition-colors"
+                  >Figma</a
+                >
+              </div>
+            </div>
+
+            <figure
+              class="relative w-full max-w-[450px] md:max-w-[550px] lg:w-1/2 overflow-hidden group"
+            >
+              <img
+                src="/src/assets/image/mockup.png"
+                alt="모니터"
+                class="w-full h-auto block relative z-20 pointer-events-none"
+              />
+
+              <div
+                class="absolute z-10 overflow-hidden"
+                style="top: 5.5%; left: 3.5%; width: 93%; height: 63%"
+              >
+                <img
+                  src="/src/assets/image/woink.png"
+                  alt="원익IPS 페이지"
+                  class="w-full h-auto animate-autoScroll"
+                />
+              </div>
+            </figure>
+          </div>
+        </article>
+      </section>
+
+      <!--프라임 -->
+      <section
+        class="section w-full min-h-[100svh] bg-p02 py-20 lg:py-0 flex items-center"
+        data-anchor="project"
+      >
+        <article class="mx-auto w-full max-w-[1200px] px-6 md:px-12">
+          <div
+            class="w-full flex flex-col lg:flex-row gap-16 lg:items-start items-center justify-center"
+          >
+            <div
+              class="w-full lg:w-1/2 max-w-[600px] lg:max-w-none text-center lg:text-left"
+            >
+              <p
+                class="font-inria text-72 lg:text-110 opacity-20 leading-none lg:ml-[-12px]"
+              >
+                02
+              </p>
+              <h3
+                class="font-inria font-bold text-50 md:text-60 lg:text-72 uppercase mb-3"
+              >
+                Prime <br class="lg:block hidden" />
+                Dental
+              </h3>
+              <span class="block my-3 opacity-70 text-14 md:text-16">
+                HTML5 / Tailwind CSS / JavaScript | Figma
+              </span>
+              <p
+                class="opacity-80 text-16 md:text-18 md:leading-8 leading-6 mb-8 lg:mb-10"
+              >
+                신뢰가 중요한 치과 웹사이트의 특성을 반영하여
+                <br class="lg:block hidden" />
+                정갈한 컬러감과 직관적인 인터페이스로 구현한 프로젝트입니다.
+              </p>
+
+              <div
+                class="flex justify-center lg:justify-start gap-4 text-15 md:text-16 opacity-80"
+              >
+                <a
+                  href="https://prime-five-sigma.vercel.app/"
+                  class="hover:text-white transition-colors"
+                  >Site</a
+                >
+                <span class="opacity-30">|</span>
+                <a
+                  href="https://github.com/yuhyeon9808/prime"
+                  class="hover:text-white transition-colors"
+                  >Github</a
+                >
+                <span class="opacity-30">|</span>
+                <a
+                  href="https://www.figma.com/design/os8CYszSVMTO98d9HgYZg3/%EC%B9%98%EA%B3%BC-%EC%82%AC%EC%9D%B4%ED%8A%B8?node-id=0-1&t=lCw9SxjSMGgAsEtr-1"
+                  class="hover:text-white transition-colors"
+                  >Figma</a
+                >
+              </div>
+            </div>
+
+            <figure
+              class="relative w-full max-w-[450px] md:max-w-[550px] lg:w-1/2 overflow-hidden group"
+            >
+              <img
+                src="/src/assets/image/mockup.png"
+                alt="모니터"
+                class="w-full h-auto block relative z-20 pointer-events-none"
+              />
+
+              <div
+                class="absolute z-10 overflow-hidden"
+                style="top: 5.5%; left: 3.5%; width: 93%; height: 63%"
+              >
+                <img
+                  src="/src/assets/image/prime.png"
+                  alt="프라임치과 페이지"
+                  class="w-full h-auto animate-autoScroll"
+                />
+              </div>
+            </figure>
+          </div>
+        </article>
+      </section>
+
+      <!--센트리에 -->
+      <section
+        class="section w-full min-h-[100svh] bg-p03 py-20 lg:py-0 flex items-center"
+        data-anchor="project"
+      >
+        <article class="mx-auto w-full max-w-[1200px] px-6 md:px-12">
+          <div
+            class="w-full flex flex-col lg:flex-row gap-16 lg:items-start items-center justify-center"
+          >
+            <div
+              class="w-full lg:w-1/2 max-w-[600px] lg:max-w-none text-center lg:text-left"
+            >
+              <p
+                class="font-inria text-72 lg:text-110 opacity-20 leading-none lg:ml-[-12px]"
+              >
+                03
+              </p>
+              <h3
+                class="font-inria font-bold text-50 md:text-60 lg:text-72 uppercase mb-3"
+              >
+                Sentrie
+              </h3>
+              <span class="block my-3 opacity-70 text-14 md:text-16">
+                Next.js / TypeScript / Tailwind CSS / DaisyUI headlessui <br />
+                React Query / Zustand / Axios / Swiper.js | Figma
+              </span>
+              <p
+                class="opacity-80 text-16 md:text-18 md:leading-8 leading-6 mb-8 lg:mb-10"
+              >
+                향수 편집샵을 주제로 한 이커머스 사이트로,
+                <br class="lg:block hidden" />
+                사용자 경험에 최적화된 프론트엔드 환경을 구현한 프로젝트입니다.
+              </p>
+
+              <div
+                class="flex justify-center lg:justify-start gap-4 text-15 md:text-16 opacity-80"
+              >
+                <a
+                  href="https://scentrie.vercel.app/"
+                  class="hover:text-white transition-colors"
+                  >Site</a
+                >
+                <span class="opacity-30">|</span>
+                <a
+                  href="https://github.com/yuhyeon9808/scentrie"
+                  class="hover:text-white transition-colors"
+                  >Github</a
+                >
+                <span class="opacity-30">|</span>
+                <a
+                  href="https://www.figma.com/design/vvDg7wvEA6MZ0KtPuobrK3/%EC%84%BC%ED%8A%B8%EB%A6%AC%EC%97%90?node-id=0-1&t=wZO4WCVsfF8RMwzH-1"
+                  class="hover:text-white transition-colors"
+                  >Figma</a
+                >
+              </div>
+            </div>
+
+            <figure
+              class="relative w-full max-w-[450px] md:max-w-[550px] lg:w-1/2 overflow-hidden group"
+            >
+              <img
+                src="/src/assets/image/mockup.png"
+                alt="모니터"
+                class="w-full h-auto block relative z-20 pointer-events-none"
+              />
+
+              <div
+                class="absolute z-10 overflow-hidden"
+                style="top: 5.5%; left: 3.5%; width: 93%; height: 63%"
+              >
+                <img
+                  src="/src/assets/image/sentrie.png"
+                  alt="센트리에 페이지"
+                  class="w-full h-auto animate-autoScroll"
+                />
+              </div>
+            </figure>
+          </div>
+        </article>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section
+        class="section w-full min-h-[100svh] bg-main flex flex-col justify-between lg:px-0 px-10"
+        data-anchor="contact"
+        aria-label="Contact"
+      >
+        <div class="flex-grow flex items-center">
+          <div class="mx-auto w-full max-w-[1200px] px-6 md:px-12">
+            <div
+              class="flex flex-col lg:flex-row lg:items-end justify-between gap-10"
+            >
+              <div>
+                <h2
+                  class="font-inria font-bold text-80 md:text-110 lg:text-160 leading-[0.9] tracking-tighter transition-all lg:ml-[-16px] ml-[-8px]"
+                >
+                  Contact
+                </h2>
+                <p
+                  class="mt-6 text-16 md:text-20 tracking-[0.3em] md:tracking-[0.5em] opacity-80 overflow-hidden"
+                >
+                  함께 성장할 준비가 되어 있습니다
+                </p>
+              </div>
+
+              <address class="not-italic lg:mb-4">
+                <ul class="space-y-6 md:space-y-8">
+                  <li class="group">
+                    <span
+                      class="block font-inria text-14 uppercase opacity-50 mb-1 transition-colors"
+                      >phone</span
+                    >
+                    <span class="text-20 md:text-28 font-light">
+                      010-9845-5266
+                    </span>
+                  </li>
+                  <li class="group">
+                    <span
+                      class="block font-inria text-14 uppercase opacity-50 mb-1 transition-colors"
+                      >Email</span
+                    >
+                    <span class="text-20 md:text-28 font-light">
+                      bwj9808@naver.com
+                    </span>
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full pt-32">
+          <div
+            class="mx-auto w-full max-w-[1200px] px-6 lg:px-12 flex flex-col lg:flex-row justify-between gap-4"
+          >
+            <p
+              class="font-inria opacity-40 text-14 md:text-16 uppercase tracking-widest"
+            >
+              © 2026 YU HYEON JI.
+            </p>
+            <p class="font-inria opacity-40 text-12 md:text-14">
+              All rights reserved. Designed & Developed by HyeonJi
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
