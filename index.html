@@ -68,9 +68,8 @@
         data-anchor="hero"
         aria-label="Hero"
       >
-        <!-- Top area (layout block) -->
         <div
-          class="absolute top-0 left-0 w-full z-10 px-6 md:px-12 py-8 md:py-10"
+          class="hero-reveal delay-3 absolute top-0 left-0 w-full z-10 px-6 md:px-12 py-8 md:py-10"
         >
           <div class="flex items-center sm:justify-between justify-end">
             <p
@@ -79,7 +78,6 @@
               Web Publishing
             </p>
 
-            <!-- Primary navigation (only on first section) -->
             <nav aria-label="Primary">
               <ul
                 class="flex gap-8 md:gap-12 text-16 md:text-20 font-medium font-inria mr-auto"
@@ -104,25 +102,23 @@
           </div>
         </div>
 
-        <!-- Center content -->
         <div
           class="h-full flex flex-col items-center justify-center text-center px-6"
         >
           <h1
-            class="font-inria font-bold tracking-[-0.02em] text-60 sm:text-80 md:text-110 leading-none"
+            class="hero-reveal delay-1 font-inria font-bold tracking-[-0.02em] text-60 sm:text-80 md:text-110 leading-none"
           >
             PORTFOLIO
           </h1>
           <p
-            class="mt-6 md:mt-8 text-16 md:text-24 font-light tracking-[0.5em]"
+            class="hero-reveal delay-2 mt-6 md:mt-8 text-16 md:text-24 font-light tracking-[0.5em]"
           >
             디자인의 의도를 화면 위에 구현합니다.
           </p>
         </div>
 
-        <!-- Bottom area (layout block) -->
         <div
-          class="absolute bottom-0 left-0 w-full px-6 md:px-12 py-8 md:py-10 flex items-center justify-between text-16 md:text-20 font-inria tracking-wide"
+          class="hero-reveal delay-3 absolute bottom-0 left-0 w-full px-6 md:px-12 py-8 md:py-10 flex items-center justify-between text-16 md:text-20 font-inria tracking-wide"
           aria-label="Hero bottom text"
         >
           <p>From Pixels To Code</p>
@@ -143,14 +139,14 @@
             class="w-full grid lg:grid-cols-2 items-start gap-y-12 lg:gap-y-0"
           >
             <h2
-              class="font-inria font-bold text-60 md:text-72 lg:text-110 leading-none"
+              class="about-reveal delay-1 font-inria font-bold text-60 md:text-72 lg:text-110 leading-none"
             >
               About
             </h2>
 
             <div class="space-y-10 lg:space-y-12">
               <p
-                class="text-16 md:text-18 lg:text-20 leading-relaxed text-gray-light"
+                class="about-reveal delay-2 text-16 md:text-18 lg:text-20 leading-relaxed text-gray-light"
               >
                 안녕하세요.<br />
                 디자인의 의도를 정확한 코드로 번역하는 퍼블리셔 유현지입니다.<br
@@ -160,9 +156,11 @@
                 지향합니다.
               </p>
 
-              <div class="space-y-10 lg:text-20 md:text-18 text-16">
+              <div
+                class="about-reveal delay-3 space-y-10 lg:text-20 md:text-18 text-16"
+              >
                 <div class="space-y-4">
-                  <p class="font-semibold">Education</p>
+                  <p class="font-semibold text-white">Education</p>
                   <p class="text-gray-light leading-relaxed">
                     2025.04 ~ 2025.10<br class="md:hidden" />
                     <span class="hidden md:inline">&nbsp;&nbsp;&nbsp;</span>
@@ -171,7 +169,7 @@
                 </div>
 
                 <div class="space-y-4">
-                  <p class="font-semibold">Experience</p>
+                  <p class="font-semibold text-white">Experience</p>
                   <p class="text-gray-light leading-relaxed">
                     2020.12 ~ 2024.04<br class="md:hidden" />
                     <span class="hidden md:inline">&nbsp;&nbsp;&nbsp;</span>
@@ -181,7 +179,7 @@
               </div>
 
               <ul
-                class="border-t border-white-base/10 pt-10 space-y-6 lg:text-20 md:text-18 text-16"
+                class="about-reveal delay-4 border-t border-white-base/10 pt-10 space-y-6 lg:text-20 md:text-18 text-16"
               >
                 <li class="flex flex-col md:flex-row gap-2 md:gap-10">
                   <span class="md:w-32 font-semibold text-white"
@@ -191,14 +189,12 @@
                     HTML5 · CSS3 · JS · jQuery · React
                   </p>
                 </li>
-
                 <li class="flex flex-col md:flex-row gap-2 md:gap-10">
                   <span class="md:w-32 font-semibold text-white"
                     >Design Tools</span
                   >
                   <p class="text-gray-light">Figma · Photoshop · Illustrator</p>
                 </li>
-
                 <li class="flex flex-col md:flex-row gap-2 md:gap-10">
                   <span class="md:w-32 font-semibold text-white">Others</span>
                   <p class="text-gray-light">GitHub · Slack · Notion</p>
@@ -220,28 +216,31 @@
             class="w-full flex flex-col lg:flex-row lg:gap-0 gap-16 lg:items-start items-center justify-center"
           >
             <div
-              class="w-full lg:w-1/2 max-w-[600px] lg:max-w-none text-center lg:text-left"
+              class="pj-text-reveal w-full lg:w-1/2 max-w-[600px] lg:max-w-none text-center lg:text-left"
             >
               <p
                 class="font-inria text-72 lg:text-110 opacity-20 leading-none lg:ml-[-12px]"
               >
                 01
               </p>
-              <h3
-                class="font-inria font-bold text-50 md:text-60 lg:text-72 uppercase mb-3"
-              >
-                Woink Ips
-              </h3>
-              <span class="block my-3 opacity-50 text-14 md:text-16">
-                HTML5 / CSS3 / JavaScript | Figma
-              </span>
-              <p
-                class="text-gray-light text-16 md:text-18 md:leading-8 leading-6 mb-8 lg:mb-10"
-              >
-                반도체·디스플레이 공정 장비를 만드는
-                <br class="lg:block hidden" />
-                원익IPS 사이트를 리디자인한 프로젝트입니다.
-              </p>
+
+              <div class="">
+                <h3
+                  class="font-inria font-bold text-50 md:text-60 lg:text-72 uppercase mb-3"
+                >
+                  Woink Ips
+                </h3>
+                <span class="block my-3 opacity-50 text-14 md:text-16">
+                  HTML5 / CSS3 / JavaScript | Figma
+                </span>
+                <p
+                  class="text-gray-light text-16 md:text-18 md:leading-8 leading-6 mb-8 lg:mb-10"
+                >
+                  반도체·디스플레이 공정 장비를 만드는
+                  <br class="lg:block hidden" />
+                  원익IPS 사이트를 리디자인한 프로젝트입니다.
+                </p>
+              </div>
 
               <div
                 class="flex justify-center lg:justify-start gap-4 text-15 md:text-16 opacity-80"
@@ -261,7 +260,7 @@
                 >
                 <span class="opacity-30">|</span>
                 <a
-                  href="https://www.figma.com/design/PsLoFaU4gGrfZhKOKj6h7V/%EC%9B%90%EC%9D%B5IPS-%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?node-id=0-1&t=sJqoStTDHruX7Eof-1"
+                  href="https://www.figma.com/design/..."
                   class="hover:text-white transition-colors"
                   target="_blank"
                   >Figma</a
@@ -270,7 +269,7 @@
             </div>
 
             <figure
-              class="relative w-full max-w-[450px] md:max-w-[550px] lg:w-1/2 overflow-hidden group"
+              class="pj-img-reveal relative w-full max-w-[450px] md:max-w-[550px] lg:w-1/2 overflow-hidden group"
             >
               <img
                 src="/src/assets/image/mockup.png"
@@ -303,28 +302,31 @@
             class="w-full flex flex-col lg:flex-row gap-16 lg:items-start items-center justify-center"
           >
             <div
-              class="w-full lg:w-1/2 max-w-[600px] lg:max-w-none text-center lg:text-left"
+              class="pj-text-reveal w-full lg:w-1/2 max-w-[600px] lg:max-w-none text-center lg:text-left"
             >
               <p
                 class="font-inria text-72 lg:text-110 opacity-20 leading-none lg:ml-[-12px]"
               >
                 02
               </p>
-              <h3
-                class="font-inria font-bold text-50 md:text-60 lg:text-72 uppercase mb-3"
-              >
-                Prime Dental
-              </h3>
-              <span class="block my-3 opacity-70 text-14 md:text-16">
-                HTML5 / Tailwind CSS / JavaScript | Figma
-              </span>
-              <p
-                class="opacity-80 text-16 md:text-18 md:leading-8 leading-6 mb-8 lg:mb-10"
-              >
-                신뢰가 중요한 치과 웹사이트의 특성을 반영하여
-                <br class="lg:block hidden" />
-                정갈한 컬러감과 직관적인 인터페이스로 구현한 프로젝트입니다.
-              </p>
+
+              <div class="">
+                <h3
+                  class="font-inria font-bold text-50 md:text-60 lg:text-72 uppercase mb-3"
+                >
+                  Prime Dental
+                </h3>
+                <span class="block my-3 opacity-70 text-14 md:text-16">
+                  HTML5 / Tailwind CSS / JavaScript | Figma
+                </span>
+                <p
+                  class="opacity-80 text-16 md:text-18 md:leading-8 leading-6 mb-8 lg:mb-10"
+                >
+                  신뢰가 중요한 치과 웹사이트의 특성을 반영하여
+                  <br class="lg:block hidden" />
+                  정갈한 컬러감과 직관적인 인터페이스로 구현한 프로젝트입니다.
+                </p>
+              </div>
 
               <div
                 class="flex justify-center lg:justify-start gap-4 text-15 md:text-16 opacity-80"
@@ -344,7 +346,7 @@
                 >
                 <span class="opacity-30">|</span>
                 <a
-                  href="https://www.figma.com/design/os8CYszSVMTO98d9HgYZg3/%EC%B9%98%EA%B3%BC-%EC%82%AC%EC%9D%B4%ED%8A%B8?node-id=0-1&t=lCw9SxjSMGgAsEtr-1"
+                  href="https://www.figma.com/design/..."
                   class="hover:text-white transition-colors"
                   target="_blank"
                   >Figma</a
@@ -353,7 +355,7 @@
             </div>
 
             <figure
-              class="relative w-full max-w-[450px] md:max-w-[550px] lg:w-1/2 overflow-hidden group"
+              class="pj-img-reveal relative w-full max-w-[450px] md:max-w-[550px] lg:w-1/2 overflow-hidden group"
             >
               <img
                 src="/src/assets/image/mockup.png"
@@ -386,30 +388,34 @@
             class="w-full flex flex-col lg:flex-row gap-16 lg:items-start items-center justify-center"
           >
             <div
-              class="w-full lg:w-1/2 max-w-[600px] lg:max-w-none text-center lg:text-left"
+              class="pj-text-reveal w-full lg:w-1/2 max-w-[600px] lg:max-w-none text-center lg:text-left"
             >
               <p
                 class="font-inria text-72 lg:text-110 opacity-20 leading-none lg:ml-[-12px]"
               >
                 03
               </p>
-              <h3
-                class="font-inria font-bold text-50 md:text-60 lg:text-72 uppercase mb-3"
-              >
-                Sentrie
-              </h3>
-              <span class="block my-3 opacity-70 text-14 md:text-16">
-                Next.js / TypeScript / Tailwind CSS / DaisyUI headlessui
-                <br class="lg:block hidden" />
-                React Query / Zustand / Axios / Swiper.js | Figma
-              </span>
-              <p
-                class="opacity-80 text-16 md:text-18 md:leading-8 leading-6 mb-8 lg:mb-10"
-              >
-                향수 편집샵을 주제로 한 이커머스 사이트로,
-                <br class="lg:block hidden" />
-                사용자 경험에 최적화된 프론트엔드 환경을 구현한 프로젝트입니다.
-              </p>
+
+              <div class="">
+                <h3
+                  class="font-inria font-bold text-50 md:text-60 lg:text-72 uppercase mb-3"
+                >
+                  Sentrie
+                </h3>
+                <span class="block my-3 opacity-70 text-14 md:text-16">
+                  Next.js / TypeScript / Tailwind CSS / DaisyUI headlessui
+                  <br class="lg:block hidden" />
+                  React Query / Zustand / Axios / Swiper.js | Figma
+                </span>
+                <p
+                  class="opacity-80 text-16 md:text-18 md:leading-8 leading-6 mb-8 lg:mb-10"
+                >
+                  향수 편집샵을 주제로 한 이커머스 사이트로,
+                  <br class="lg:block hidden" />
+                  사용자 경험에 최적화된 프론트엔드 환경을 구현한
+                  프로젝트입니다.
+                </p>
+              </div>
 
               <div
                 class="flex justify-center lg:justify-start gap-4 text-15 md:text-16 opacity-80"
@@ -429,7 +435,7 @@
                 >
                 <span class="opacity-30">|</span>
                 <a
-                  href="https://www.figma.com/design/vvDg7wvEA6MZ0KtPuobrK3/%EC%84%BC%ED%8A%B8%EB%A6%AC%EC%97%90?node-id=0-1&t=wZO4WCVsfF8RMwzH-1"
+                  href="https://www.figma.com/design/..."
                   class="hover:text-white transition-colors"
                   target="_blank"
                   >Figma</a
@@ -438,7 +444,7 @@
             </div>
 
             <figure
-              class="relative w-full max-w-[450px] md:max-w-[550px] lg:w-1/2 overflow-hidden group"
+              class="pj-img-reveal relative w-full max-w-[450px] md:max-w-[550px] lg:w-1/2 overflow-hidden group"
             >
               <img
                 src="/src/assets/image/mockup.png"
@@ -474,36 +480,38 @@
             >
               <div>
                 <h2
-                  class="font-inria font-bold text-80 md:text-110 lg:text-160 leading-[0.9] tracking-tighter transition-all lg:ml-[-16px] ml-[-8px]"
+                  class="contact-reveal contact-delay-1 font-inria font-bold text-80 md:text-110 lg:text-160 leading-[0.9] tracking-tighter transition-all lg:ml-[-16px] ml-[-8px]"
                 >
                   Contact
                 </h2>
                 <p
-                  class="mt-6 text-16 md:text-20 tracking-[0.3em] md:tracking-[0.5em] opacity-80 overflow-hidden"
+                  class="contact-reveal contact-delay-2 mt-6 text-16 md:text-20 tracking-[0.3em] md:tracking-[0.5em] opacity-80 overflow-hidden"
                 >
                   함께 성장할 준비가 되어 있습니다
                 </p>
               </div>
 
-              <address class="not-italic lg:mb-4">
+              <address
+                class="contact-reveal contact-delay-3 not-italic lg:mb-4"
+              >
                 <ul class="space-y-6 md:space-y-8">
                   <li class="group">
                     <span
                       class="block font-inria text-14 uppercase opacity-50 mb-1 transition-colors"
                       >phone</span
                     >
-                    <span class="text-20 md:text-28 font-light">
-                      010-9845-5266
-                    </span>
+                    <span class="text-20 md:text-28 font-light"
+                      >010-9845-5266</span
+                    >
                   </li>
                   <li class="group">
                     <span
                       class="block font-inria text-14 uppercase opacity-50 mb-1 transition-colors"
                       >Email</span
                     >
-                    <span class="text-20 md:text-28 font-light">
-                      bwj9808@naver.com
-                    </span>
+                    <span class="text-20 md:text-28 font-light"
+                      >bwj9808@naver.com</span
+                    >
                   </li>
                 </ul>
               </address>
@@ -511,7 +519,7 @@
           </div>
         </div>
 
-        <div class="w-full pt-32">
+        <div class="contact-reveal contact-delay-4 w-full pt-32 pb-10">
           <div
             class="mx-auto w-full max-w-[1200px] px-6 lg:px-12 flex flex-col lg:flex-row justify-between gap-4"
           >
